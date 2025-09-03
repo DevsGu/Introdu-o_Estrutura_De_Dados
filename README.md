@@ -6,3 +6,5 @@ Aprender o conceito e a aplicação de vetores, iniciando com exercícios e apli
 
 ## Atualizações
 Atualizações Semanais 
+01/09/2025 -> 5 questões ✅
+02/09/2025 -> 5 questões ✅

@@ -108,3 +108,100 @@ for valor in t:
 print("Maior valor:", maior)
 print("Menor valor:", menor)
 """
+#Exercício 06: Desenvolver um programa que leia dez elementos numéricos de um vetor A.
+#Construir um vetor B do mesmo tipo, observando a seguinte lei de formação: se o valor do
+#índice do vetor A for par, o valor deve ser multiplicado por 5; sendo ímpar, deve ser
+#somado com 5. Ao final, mostrar o conteúdo dos vetores A e B.
+
+"""
+a = []
+b = []
+for i in range(6):
+    x = int(input("Digite elemento:"))
+    a.append(x)
+
+for i , e in enumerate(a):
+    if i % 2 == 0:
+        b.append(e*5)
+    
+    else:
+        b.append(e+5)
+
+print(a)
+print(b)
+"""
+
+#❑Exercício 07: Desenvolver um programa que leia cinco elementos numéricos inteiros de um
+#vetor A. No final, apresentar o total da soma de todos os elementos do vetor A que sejam
+#ímpares.
+"""
+a = [1,2,3,4,5]
+soma = 0
+
+for i in a:
+    if i % 2 != 0:
+        soma += i
+    
+print(a)
+print(f"Soma dos imapares:{soma}")
+
+"""
+#❑Exercício 08: Elaborar um programa que efetue a leitura de dez nomes de pessoas e
+#armazene em um vetor, apresente-os sem seguida.
+"""
+pessoas = []
+
+for i in range(5):
+    x = str(input("Digite o nome das pessoas:"))
+    pessoas.append(x)
+
+print(pessoas)
+"""
+
+#❑Exercício 9: Elaborar um programa que leia oito elementos inteiros em um vetor A.
+#Construir um vetor B de mesma dimensão com os elementos do vetor A multiplicados por 3.
+# O elemento B[1] deve ser implicado pelo elemento A[1]*3, o elemento B[2] implicado
+#pelo elemento A[2]*3 e assim por diante, até 8. Apresentar o vetor B.
+"""
+a = [1,2,3,4,5,6,7,8]
+b = []
+
+for i in a:
+    b.append(i * 3)
+
+print(a)
+print(b)
+"""
+#Exercício 10: Escrever um programa que leia dois vetores (denominados A e B) com 20
+#elementos reais. Construir um vetor C, sendo cada elemento do vetor C a subtração de um
+#elemento correspondente do vetor A com um elemento correspondente do vetor B, ou
+#seja, a operação de processamento deve estar baseada na operação C[i] = A[i] - B[i]. Ao
+#final, apresentar os elementos do vetor C.
+
+"""
+a = [10,9,8,7,6]
+b = [1,2,3,4,5]
+c = []
+
+for i in range(5):
+    c.append(a[i]-b[i])
+
+print(c)
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
