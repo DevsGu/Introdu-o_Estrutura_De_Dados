@@ -14,7 +14,5 @@ Aprender o conceito e a aplicação de vetores, iniciando com exercícios e apli
 
 06/09/2025 -> 5 questões ✅ 
 
-
-
 ## Nota
  A medida e formos ganhando expêriencia em vetores , a resolução das questões se tornam mais faceis , consequêntemente abre espaço para resolução de outras questões de outros conteúdos.(em outras palavras continuaremos a atualizar as questões).
