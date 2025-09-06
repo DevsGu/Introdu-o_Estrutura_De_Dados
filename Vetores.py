@@ -133,7 +133,7 @@ print(b)
 
 #❑Exercício 07: Desenvolver um programa que leia cinco elementos numéricos inteiros de um
 #vetor A. No final, apresentar o total da soma de todos os elementos do vetor A que sejam
-#ímpares.
+#ímpares..
 """
 a = [1,2,3,4,5]
 soma = 0
@@ -189,19 +189,169 @@ for i in range(5):
 print(c)
 """
 
+#Exercício 11: Elaborar um programa que leia 15 elementos inteiros de um vetor A.
+#Construir um vetor B de mesmo tipo, observando a seguinte lei de formação: "todo
+#elemento do vetor B deve ser o quadrado do elemento do vetor A correspondente".
+#Apresentar os elementos dos vetores A e B.
+
+#Feito Com For
+"""
+a = [1,2,3,4,5]
+b = []
+
+for i in a:
+    b.append(i * i)
+
+print(a)
+print(b)
+"""
+#Feito com Lista Comprehesion
+"""
+a = [1,2,3,4,5]
+b = [i ** 2 for i in a]
+
+print(a)
+print(b)
+"""
+
+#Exercício 12: Elaborar um programa que leia um vetor A com 3 elementos inteiros.
+#Construir um vetor B de mesmo tipo, e cada elemento do vetor B deve ser o resultado do
+#fatorial correspondente de cada elemento do vetor A. Apresentar os vetores A e B.
+"""
+a = [1,2,3,4,5]
+b = []
+
+for i in a:
+    fat = 1
+    for j in range(i):
+        fat *= j + 1
+    b.append(fat)
+
+print(a)
+print(b)
+"""
+
+#❑Exercício 13: Construir um programa que leia dois vetores A e B com 15 elementos inteiros
+# cada. Construir um vetor C, sendo este o resultado da junção dos vetores A e B. Desta
+#forma, o vetor C deve ter o dobro de elementos em relação aos vetores A e B, ou seja, o
+#vetor C deve possuir 30 elementos. Apresentar o vetor C.
+"""
+a = [1,2,3]
+b = [4,5,6]
+c = []
+
+c = a + b
+
+print(c)
+"""
+#Exercício 14: Elaborar um programa que leia 10 elementos do tipo real em um vetor A e
+#construir um vetor B de mesma dimensão com os mesmos elementos armazenados no
+#vetor A, porém de forma invertida. Ou seja, o primeiro elemento do vetor A passa a ser o
+#último do vetor B, o segundo elemento de A passa a ser o penúltimo de B, e assim por
+#diante. Apresentar os elementos dos vetores A e B.
+"""
+a = list(range(1 , 10 + 1  , 1))
+b = []
+
+b.append(a[::-1])
+print(a)
+print(b)
+"""
+#❑Exercício 15: Escrever um programa que leia três vetores (A, B e C) com cinco elementos
+#cada que sejam do tipo real. Construir um vetor D, sendo este o resultado da junção dos
+#três vetores (A, B e C). Desta forma, o vetor D deve ter o triplo de elementos dos vetores A,
+#B e C, ou seja, 15 elementos. Apresentar os elementos do vetor D.
+"""
+a = [1,2,3]
+b = [4,5,6]
+c = [7,8,9]
+d = []
+
+d = a + b + c + d
+
+print(d)
+"""
+
+#Exercício 16: Elaborar um programa que leia um vetor A com 10 elementos inteiros.
+#Construir um vetor B do mesmo tipo e dimensão do vetor A, sendo cada elemento do vetor
+#B o somatório de 1 até o valor do elemento correspondente armazenado no vetor A. Se o
+#valor do elemento do vetor A[1] for 5, o elemento correspondente do vetor B[1] deve ser
+#15, pois o somatório do elemento do vetor A é 1+2+3+4+5. Apresentar os elementos do
+#vetor B.
+"""
+a = [1,2,3,4,5]
+b = []
+
+for i in a:
+    soma = 0
+    for j in range(i):
+        soma += j + 1
+    b.append(soma)
+
+print(a)
+print(b)
+"""
+#Exercício 17: Elaborar um programa que leia um vetor A com dez elementos inteiros
+#positivos. Construir um vetor B do mesmo tipo e dimensão, em que cada elemento do
+#vetor B deve ser o valor negativo do elemento correspondente do vetor A. Desta forma, se
+#em A[1] estiver armazenado o elemento 8, deve estar em B[1] o valor –8 e assim por
+#diante. Apresentar os valores dos vetores A e B.
+"""
+a = [1,2,3,4,5]
+b = []
+
+for i in a:
+    b.append(i * -1)
+
+print(a)
+print(b)
+"""
+#❑Exercício 18 Elaborar um programa que leia um vetor A com dez elementos inteiros.
+#Construir um vetor B de mesmo tipo, em que cada elemento deve ser a metade de cada
+#um dos elementos existentes no vetor B. Apresentar os elementos dos vetores A e B.
+"""
+a = [1,2,3,4,5]
+b = []
+
+for i in a:
+    b.append(i / 2)
+
+print(a)
+print(b)
+"""
+#Exercício 19: Construir um programa que calcule a tabuada de um valor qualquer de 1 até
+#10 e armazene os resultados em um vetor A. Apresentar os elementos do vetor A.
+"""
+a = []
+n = int(input("Digite a tabuada desejada:"))
+
+for i in range(11):
+    a.append(n * i)
+
+print(a)
+"""
+
+#Exercício 20: Elaborar um programa que leia 10 elementos (valores reais) para
+#temperaturas e graus Celsius e armazene esses valores em um vetor A. O programa ao final
+#deve apresentar a menor, a maior e a média das temperaturas lidas.
+"""
+temp = [18,30,45,12,20]
+maior = 0 
+menor = 1000
+soma = 0 
 
 
+for i in temp:
+    soma += i
+    if maior < i:
+        maior = i
+    if i < menor:
+        menor = i
+
+ma = soma / len(temp)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+print(maior)
+print(menor)
+print(f"Média:{ma}")
+"""
