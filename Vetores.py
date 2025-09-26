@@ -355,3 +355,107 @@ print(maior)
 print(menor)
 print(f"Média:{ma}")
 """
+
+#21:Elaborar um programa que leia 10 elementos inteiros para um vetor A.
+#Construir um vetor B de mesmo tipo e dimensão, observando a seguinte lei de formação:
+#"todo elemento do vetor A que for ímpar deve ser multiplicado por 2; caso contrário, o
+#elemento do vetor A deve permanecer constante". Apresentar os elementos do vetor B.
+
+
+
+"""
+a = [1,2,3,4,5,6]
+b = []
+
+for i in a:
+    if i % 2 != 0:
+        b.append(i*2)
+
+print(a)
+print(b)
+"""
+
+#Exercício 22: Elaborar um programa que leia 10 elementos reais para um vetor A. Construir
+#um vetor B de mesmo tipo e dimensão, observando a seguinte lei de formação: "todo
+#elemento do vetor A que possuir índice par deve ter seu elemento dividido por 2; caso
+#contrário, o elemento do vetor A deve ser multiplicado por 1.5". Apresentar os elementos
+#do vetor B.
+"""
+a = [1,2,3,4,5,6]
+b= []
+
+for i in a:
+    if i % 2 == 0:
+        b.append(i * 2)
+    else:
+        b.append(i * 1.5)
+
+print(a)
+print(b)
+"""
+#Exercício 23 Elaborar um progrma que leia 6 elementos (valores inteiros) para os vetores
+#A e B. Construir os vetores C e D de mesmo tipo e dimensão. O vetor C deve ser formado
+#pelos elementos de índice ímpar dos vetores A e B e o vetor D deve ser formado pelos
+#elementos de índice par dos vetores A e B. Apresentar os elementos dos vetores C e D.
+
+"""
+a = [1,2,3,4,5]
+b = [6,7,8,9,10]
+c = []
+d = []
+
+for i in a:
+    if i % 2 != 0:
+        c.append(i)
+    elif i % 2 == 0:
+        d.append(i)
+        
+
+for i in b:
+    if i % 2 != 0:
+        c.append(i)
+    elif i % 2 == 0:
+        d.append(i)
+
+print(c)
+print(d)
+"""
+
+#❑Exercício 24 Construir um programa que leia um vetor A com dez elementos inteiros. Ao
+#final do programa, apresentar a quantidade de valores pares e ímpares existentes no
+#referido vetor.
+"""
+a = list(range(1 , 10 , 1))
+par = []
+impar = []
+
+for i in a:
+    if i % 2 == 0:
+        par.append(i)
+    else:
+        impar.append(i)
+    
+
+print(a)
+print(par)
+print(impar)
+"""             
+        
+#25 - Elaborar um programa que leia dois vetores A e B com dez elementos inteiros
+#cada. Construir um vetor C de mesmo tipo e dimensão que seja formado pelo quadrado da
+#soma dos elementos correspondentes dos vetores A e B. Apresentar os elementos do vetor
+#C.
+
+"""
+a = list(range(1, 11))        
+b = list(range(11, 21))       
+c = []
+
+
+for i in range(len(a)):
+    c.append((a[i] + b[i]) ** 2)
+
+print("Vetor A:", a)
+print("Vetor B:", b)
+print("Vetor C:", c)
+"""
